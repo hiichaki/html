@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Довжина</p>
+    <input type="text" id="w">
+    <p>Ширина</p>
+    <input type="text" id="h" onchange="foo();">
+    <p>Периметр:<span id="p"></span></p>
+    <p>Площа:<span id="s"></span></p>
+    <p>Діагональ:<span id="d"></span></p>
+    <script>
+    function foo() {
+        var ww = parseInt(document.getElementById('w').value);
+        var hh = parseInt(document.getElementById('h').value);
+        document.getElementById('p').innerHTML = 2 * (hh + ww);
+        document.getElementById('s').innerHTML = ww * hh;
+        document.getElementById('d').innerHTML = (Math.sqrt(ww*ww+hh*hh).toFixed(4));
+    }
+    </script>
+</body>
+
+</html>

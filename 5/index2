@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="E://bootstrap-3.3.5-dist//css//bootstrap.css"></link>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="q">Require 
+		<a href="index.html" class="a1">ua</a>
+		<a href="index2.html" class="a2">eng</a>
+	</div>
+	<div class="w">
+		<label>
+			<p>Date start:</p>
+			<input type="text">
+		</label>
+		<br>
+		<label>
+			<p>Date end:</p>
+			<input type="text">
+		</label>
+		<br>
+		<p>Group</p>
+		<select name="" id="">
+			<option value="">12</option>
+			<option value=""></option>
+			<option value="">dsgkldfshgvkidgkdfsgjdfsg</option>
+		</select>
+		<p>Teacher</p>
+		<select name="" id="">
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+		</select>
+		<p>Classroom</p>
+		<select name="" id="">
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+		</select>
+		<p>Changes for</p>
+		<select name="" id="">
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+		</select>
+		<p>Setting</p>
+		<select name="" id="">
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+		</select>
+	<button type="button" class="btn btn-primary">
+		<a href="2.html">Require</a>
+	</button>
+	<button type="button" class="btn btn-primary" width="300">
+		<a href="1.html">Autorization</a>
+	</button>
+	</div>
+</body>
+</html>

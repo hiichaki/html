@@ -1,0 +1,55 @@
+.q {
+	background-color: grey;
+	color:white;
+	font-size: 20px;
+	padding-left: 15px;
+}
+
+div {
+	width: 400px;
+}
+
+.w {
+	background-color: skyblue;	
+	padding:10px 20px 30px;
+}
+
+a {
+	float: right;
+	color: white;
+}
+
+.a1 {
+	background-color: blue;
+}
+
+.a2 {
+	background-color: red;
+}
+
+select,input{
+	width: 350px;
+	margin-bottom: 5px;
+}
+
+p{
+	margin-bottom: 2px;
+}
+
+button:active{
+	background-color: white !important; 
+}
+
+table{
+	border-collapse: collapse;
+}
+
+.e{
+	width: 809px;
+}
+
+td{
+	border: 1px black solid;
+	width: 100px;
+	text-align: center;
+}

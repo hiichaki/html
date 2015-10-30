@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<span id="x"></span>
+	<span>*</span>
+	<span id="y"></span>
+	<input id="z" type="text">
+	<button onclick="foo1();">Check</button>
+	<p id="qwe"></p>
+	<p id="asd"></p>
+	<script>
+	var x,y,i=0,j=0;
+		
+	function foo2 () {
+		x=document.getElementById('x').innerHTML=parseInt(Math.random()*10);
+		y=document.getElementById('y').innerHTML=parseInt(Math.random()*10);
+	}
+
+	foo2();
+
+	function foo1 () {
+		var z=parseInt(document.getElementById('z').value);
+		if(x*y===z)
+			i++;	
+		else
+			j++;	
+		if(i+j===10){
+			alert('OK:'+i+' fail:'+j+' OK%:'+i+'0%');	
+			i=0;
+			
+		}
+		
+		foo2();
+		document.getElementById('z').setAttribute('onfocus',true);
+	}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #d {
+            position: absolute;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <div id="d"></div>
+    <script>
+        var div = document.getElementById('d');
+        div.onclick = function() {
+            var left = "50px", top = "50px"; 
+            div.style.top = top;
+            div.style.left = left;
+        }
+    </script>
+</body>
+</html>

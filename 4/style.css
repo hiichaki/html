@@ -1,0 +1,24 @@
+
+tr:nth-child(2n){
+	background-color: grey;
+}
+
+body{
+	margin-left: 50px;
+}
+
+.qwe{
+	background-color: white;
+}
+
+p{
+	font-weight: bold;
+}
+
+label{
+	font-weight: bold;	
+}
+
+.tt>td{
+	text-align: center;
+}

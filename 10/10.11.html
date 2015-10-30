@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<input type="text"name="name" id="qwe" value="name">
+		<input type="text"name="email" id="asd" value="name@at.ua">
+		<input type="text"name="number" id="zxc" value="12.3">
+	</form>
+	<p id="ff"></p>
+	<script>
+		var q =[ document.getElementById('qwe'),document.getElementById('asd'),document.getElementById('zxc')];
+		var a;
+		a='name='+q[0].name+'&'+'email'+'='+q[1].value+'&'+q[2].name+'='+q[2].value+'&secret='+parseInt(Math.random()*1000000);
+		document.getElementById('ff').innerHTML=a;
+	</script>
+
+</body>
+</html>

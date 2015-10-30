@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><span id="qwe1"></span>*<span id="qwe2"></span>=</p>
+    <input type="radio" name="q" id="">
+    <span id="s1" value="2">1</span>
+    <br>
+    <input type="radio" name="q" id="">
+    <span id="s2"></span>
+    <br>
+    <input type="radio" name="q" id="">
+    <span id="s3"></span>
+    <br>
+    <input type="radio" name="q" id="">
+    <span id="s4"></span>
+    <br>
+    <button onclick="foo();">qwe</button>
+</body>
+<script>
+function foo() {
+    var x = document.getElementById('qwe1').value = parseInt(Math.random() * 10);
+    var y = document.getElementById('qwe2').value = parseInt(Math.random() * 10);
+    document.getElementById('qwe1').innerHTML = x;
+    document.getElementById('qwe2').innerHTML = y;
+    var a = Math.random();
+    if (a > 0 && a < 0.25)
+        document.getElementById('s1').innerHTML = x * y;
+    else {
+        document.getElementById('s2').innerHTML = parseInt(Math.random() * 100);
+        document.getElementById('s3').innerHTML = parseInt(Math.random() * 100);
+        document.getElementById('s4').innerHTML = parseInt(Math.random() * 100);
+
+        if (a > 0.25 && a < 0.5)
+            document.getElementById('s2').innerHTML = x * y;
+        else {
+            document.getElementById('s1').innerHTML = parseInt(Math.random() * 100);
+            document.getElementById('s3').innerHTML = parseInt(Math.random() * 100);
+            document.getElementById('s4').innerHTML = parseInt(Math.random() * 100);
+
+            if (a > 0.5 && a < 0.75)
+                document.getElementById('s3').innerHTML = x * y;
+            else {
+                document.getElementById('s1').innerHTML = parseInt(Math.random() * 100);
+                document.getElementById('s2').innerHTML = parseInt(Math.random() * 100);
+                document.getElementById('s4').innerHTML = parseInt(Math.random() * 100);
+
+                if (a > 0.9)
+                    document.getElementById('s4').innerHTML = x * y;
+                else {
+                    document.getElementById('s2').innerHTML = parseInt(Math.random() * 100);
+                    document.getElementById('s3').innerHTML = parseInt(Math.random() * 100);
+                    document.getElementById('s1').innerHTML = parseInt(Math.random() * 100);
+                }
+            }
+        }
+    }
+}
+
+foo();
+</script>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="E:/bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="E:/bootstrap-3.3.5-dist/css/font-awesome.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-4">
+                <form action="">
+                    <p>name:</p>
+                    <input type="text" name="" id="name" class="form-control" onchange="checkname();">
+                    <p>surname:</p>
+                    <input type="text" name="" id="surname" class="form-control">
+                    <p id="n"></p>
+                    <p>adress:</p>
+                    <input type="text" name="" id="adress" class="form-control">
+                    <p>town:</p>
+                    <input type="text" name="" id="town" class="form-control">
+                    <p>country:</p>
+                    <input type="text" name="" id="country" class="form-control">
+                    <p>index:</p>
+                    <input type="text" name="" id="index" class="form-control">
+                    <p id="ind"></p>
+                    <p>email:</p>
+                    <input type="text" name="" id="mail" class="form-control">
+                    <p id="m"></p>
+                    <center>
+                        <button type="button" onclick="f1()" class="btn btn-primary">button</button>
+                    </center>
+                </form>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-4"></div>
+        </div>
+    </div>
+    <script>
+    function f1() {
+        var x, text;
+        x = document.getElementById("index").value;
+
+        if ((x > 10000) && (x < 99999))
+            text = "OK";
+        else
+            text = "fail";
+        document.getElementById("ind").innerHTML = text;
+
+        var q = document.getElementById("mail").value;
+        for (i = 0; i < q.length; i++) {
+            if (q[i] === '@') {
+                document.getElementById("m").innerHTML = "OK";
+                break;
+            } else
+                document.getElementById("m").innerHTML = "fail";
+        }
+
+        var qq = document.getElementById("name").value;
+        var alphabet = 'абвгдеэєжзиіыйклмнопрстуфхцчшщьюяъёabcdefghijklmnopqrstuwvxyz';
+        alphabet = alphabet + alphabet.toLocaleUpperCase();
+        if (qq.length === 0) return false;
+        for (i = 0; i < qq.length; i++)
+            if (alphabet.indexOf(qq[i]) == -1) {
+                document.getElementById("n").innerHTML = "fail";
+                return;
+            }
+        document.getElementById("n").innerHTML = "OK";
+    }
+    </script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+
+</html>

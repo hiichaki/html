@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+    #b {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        top:300px;
+        left: 230px;
+    }
+    </style>
+
+    <div style="font-family:cursive;font-size:23px;position:absolute;left:270px;top:220px;">вы дебилы</div>
+    <button id="b" style="font-family:cursive;font-size:23px;position:absolute;">я не дибил</button>
+
+    <script>
+    var q = document.getElementById('b');
+    q.onclick = function() {
+        q.style.top = Math.random()*500+"px";
+        q.style.left = Math.random()*500+"px";
+    };
+    q.onmouseover = function(){
+        q.style.top = Math.random()*500+"px";
+        q.style.left = Math.random()*500+"px";    
+    };
+    </script>
+</body>
+
+</html>
