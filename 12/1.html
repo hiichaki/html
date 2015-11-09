@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="E:/bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="E:/bootstrap-3.3.5-dist/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="qwe">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-7">
+                <iframe src="https://calendar.google.com/calendar/embed?src=ru.ukrainian%23holiday%40group.v.calendar.google.com&ctz=Europe/Kiev" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-2"></div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-3">
+                <button type="button" class="btn btn-success" onclick="gr();">green</button>
+                <button type="button" class="btn btn-primary" onclick="bl();">blue</button>
+                <button type="button" class="btn btn-danger" onclick="r();">red</button>
+                <button type="button" class="btn btn-info" onclick="sk();">skyblue</button>
+                <br><br>
+                <center>	<button type="button" class="btn btn-warning" onclick="next();">next</button></center>
+            </div>
+        </div>
+    </div>
+    <script>
+    var q = document.getElementById('qwe');
+    function next () {
+    	location.href = "2.html";
+    }
+    function gr() {
+        q.style.backgroundColor = "green";
+    }
+
+    function bl() {
+        q.style.backgroundColor = "blue";
+    }
+
+    function r() {
+        q.style.backgroundColor = "red";
+    }
+
+    function sk() {
+        q.style.backgroundColor = "skyblue";
+    }
+    </script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="E:/bootstrap-3.3.5-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="E:/bootstrap-3.3.5-dist/css/font-awesome.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-4"></div>
+				<div style="padding-top:250px;" class="col-xs-4 col-sm-4 col-md-4 col-4">
+					<input  placeholder="login" style="margin-bottom:20px;" type="email" name="" id="login" class="form-control"  >
+					<input  placeholder="password" style="margin-bottom:20px;" type="password" name="" id="pass" class="form-control" value="" required="required" pattern="" title="">
+					<center><button type="button" class="btn btn-default" onclick="foo();">button</button></center>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-4"></div>
+			</div>
+		</div>
+
+		<script>
+		function foo () {
+			var l=document.getElementById('login').value;
+			var p=document.getElementById('pass').value;
+			if(l===p)
+				location.href = '1.html';
+		}
+		</script>
+		
+		<script>
+			new WOW().init();
+		</script>
+
+	</body>
+</html>
